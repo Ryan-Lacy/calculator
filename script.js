@@ -15,6 +15,10 @@ function operate (operator, number1, number2) {
             multiply(number1,number2);
             break;
         case "/":
+            if (number2 === 0) {
+                alert("Not today! No dividing by zero.");
+                break;
+            }
             divide(number1,number2);
             break;
         default:
